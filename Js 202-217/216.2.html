@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function compareAverage(arr1, arr2) {
+  const average1 = calculateAverage(arr1);
+  const average2 = calculateAverage(arr2);
+
+  return average1 / average2;
+}
+
+function calculateAverage(arr) {
+  if (arr.length === 0) return 0; // Защита от деления на ноль
+  const sum = calculateSum(arr);
+  return sum / arr.length;
+}
+
+function calculateSum(arr) {
+  let sum = 0;
+  for (let elem of arr) {
+    sum += elem;
+  }
+  return sum;
+}
+
+console.log(calculateAverage([1, 2, 3, 4]));
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 

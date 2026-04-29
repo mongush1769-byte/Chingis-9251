@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+// 1
+function getDivisors(num) {
+	let result = [];
+	for (let i = 1; i <= num; i++) {
+		if (num % i === 0) {
+			result.push(i);
+		}
+	}
+	return result;
+}
+
+// 2
+function getCommonDivisors(num1, num2) {
+	let result = [];
+	let min = Math.min(num1, num2);
+	
+	for (let i = 1; i <= min; i++) {
+		if (num1 % i === 0 && num2 % i === 0) {
+			result.push(i);
+		}
+	}
+	return result;
+}
+
+// 3
+function getDigitsSum(num) {
+	let sum = 0;
+	let str = String(num);
+	
+	for (let digit of str) {
+		sum += Number(digit);
+	}
+	return sum;
+}
+
+// 4
+function getCurrentDay() {
+	let days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+	let date = new Date();
+	return days[date.getDay()];
+}
+
+//5
+function getDayOfWeek(date) {
+	let days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+	return days[date.getDay()];
+}
+
+// 6
+function getDays(seconds) {
+	return seconds / (60 * 60 * 24);
+}
+
+// 7
+function isLeapYear(year) {
+	return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+}
+
+// 8
+function isPrime(num) {
+	if (num <= 1) {
+		return false;
+	}
+	for (let i = 2; i < num; i++) {
+		if (num % i === 0) {
+			return false;
+		}
+	}
+	return true;
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
