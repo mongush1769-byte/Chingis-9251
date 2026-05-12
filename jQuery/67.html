@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+p {
+margin: 10px;
+padding: 5px;
+border: 2px solid blue;
+}
+
+    </style>
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<p id="test">text</p>
+<p id="out"></p>
+    <script>
+let w = $('#test').innerWidth();
+let h = $('#test').innerHeight();
+$('#out').text('Width: ' + w + ' Height: ' + h);
+$('#test1').innerWidth(250);
+$('#test2').innerHeight(200);
+    </script>
+</body>

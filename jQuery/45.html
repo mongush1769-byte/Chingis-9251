@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .red {
+            color: red;
+        }
+        
+        .zzz {
+            font-style: italic;
+        }
+    </style>
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+    <p class="zzz red" id="test">text</p>
+    <button>click</button>
+    <script>
+        $('button').click(function() {
+            $('#test').toggleClass('red', false);
+        });
+    </script>
+</body>
+</html>

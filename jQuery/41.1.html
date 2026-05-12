@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+
+<body>
+<input type="text" class="number" value="2">
+<input type="text" class="number" value="3">
+<input type="text" class="number" value="10">
+    <script>
+$('input.number').val(function(index, currentValue) {
+  var number = parseFloat(currentValue);
+  return number * number;
+});
+
+    </script>
+</body>

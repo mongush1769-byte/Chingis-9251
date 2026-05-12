@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+
+<body>
+<div>
+<p><span class="highlight">Текст 1</span></p>
+<p>Обычный текст <span>Текст 2</span>текст</p>
+<div><p><span id="special">Текст 3</span></p></div>
+<span>Текст 4 (не в p)</span>
+    <script>
+$('p span').unwrap();
+
+    </script>
+</body>
