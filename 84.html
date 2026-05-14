@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<div>
+  <p>
+    <b>Жирный текст 1</b>
+  </p>
+</div>
+
+<section>
+  <div class="special">
+    <span>
+      <b>Жирный текст 2</b>
+    </span>
+  </div>
+</section>
+
+<p>
+  <span>
+    <em>
+      <b>Жирный текст 3</b>
+    </em>
+  </span>
+</p>
+
+    <script>
+$('b').closest('div').css('color', 'red');
+
+    </script>
+</body>

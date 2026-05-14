@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<p class="www">Первый абзац</p>
+<h2>Заголовок 1</h2>
+<p class="www">Второй абзац</p>
+<div>
+  <h2>Заголовок 2</h2>
+</div>
+<p>Обычный абзац без класса www</p>
+
+    <script>
+$('p.www').prepend('!').append('!!').add('h2').css('color', 'red');
+
+    </script>
+</body>

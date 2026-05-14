@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<h2 class="www">
+  Заголовок 1
+  <span class="test">Этот текст будет 30 px</span>
+</h2>
+<h2 class="www">
+  Заголовок 2
+  <div>
+    <p class="test">А этот текст тоже будет 30 px</p>
+  </div>
+</h2>
+<h2>Обычный заголовок без класса www</h2>
+
+    <script>
+$('h2.www').css('color', 'red').find('.test').css('font-size', '30px').end();
+
+    </script>
+</body>

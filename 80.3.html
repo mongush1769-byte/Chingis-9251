@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<ul>
+  <li>Первый пункт</li>
+  <li class="www">Второй пункт</li>
+  <li class="test">Третий пункт</li>
+  <li class="test special">Четвёртый пункт</li>
+  <li>Пятый пункт</li>
+</ul>
+
+    <script>
+$('li.www').siblings().not('.test');
+
+    </script>
+</body>

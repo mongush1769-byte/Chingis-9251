@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<b class="www">
+  <span>Красный жирный текст</span>
+  <i class="test">Этот текст будет 30 px</i>
+</b>
+<b class="www">
+  <div>
+    <p class="test">А этот текст тоже будет 30 px</p>
+  </div>
+</b>
+
+    <script>
+$('b.www').css('color', 'red').find('.test').css('font-size', '30px');
+
+    </script>
+</body>

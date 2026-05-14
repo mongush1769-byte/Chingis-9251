@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<div class="test">
+  <div>
+    <div class="special">
+      <b>Жирный текст</b>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="test special">
+    <span>
+      <b>Ещё жирный текст</b>
+    </span>
+  </div>
+</div>
+
+<div class="other">
+  <p>
+    <b>Третий жирный текст</b>
+  </p>
+</div>
+
+    <script>
+$('b').parents('.test').css('color', 'red');
+
+    </script>
+</body>

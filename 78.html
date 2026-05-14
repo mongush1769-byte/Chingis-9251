@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<ul>
+  <li>Первый пункт</li>
+  <li class="www">Второй пункт</li>
+  <li>Третий пункт</li>
+  <li class="www special">Четвёртый пункт</li>
+  <li class="other">Пятый пункт</li>
+  <li class="www">Шестой пункт</li>
+</ul>
+
+    <script>
+$('li').filter('.www').append('!');
+
+    </script>
+</body>

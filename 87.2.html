@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<div class="www">
+  <p>Этот абзац станет красным и получит '!' в начале</p>
+  <span>
+    <p>И этот тоже</p>
+  </span>
+</div>
+<span class="www">
+  <p>Ещё один абзац с '!' в начале</p>
+</span>
+
+    <script>
+$('.www').css('color', 'red').find('p').prepend('!');
+
+    </script>
+</body>

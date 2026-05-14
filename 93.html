@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<span>hello</span>
+<span>world</span>
+<span>  javascript  </span>
+<span></span>
+<span>test</span>
+
+    <script>
+const spans = $('span').toArray();
+const result = spans.map(span => {
+  const text = $(span).text().trim();
+  if (text.length === 0) return text;
+  return text.charAt(0).toUpperCase() + text.slice(1);
+});
+console.log(result.join(', '));
+
+    </script>
+</body>

@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="jquery-4.0.0.min (1).js"></script>
+</head>
+<body>
+<p id="test">text1 <b>bold</b> text2</p>
+    <script>
+$('#text').children().each(function() {
+  console.log($(this).text());
+});
+
+    </script>
+</body>
